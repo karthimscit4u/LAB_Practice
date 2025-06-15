@@ -16,9 +16,14 @@ source ./loggenerator.sh
 
 SCRIPT_FULLNAME="$(basename "$0")"
 SCRIPT_PATH="$(realpath "$0")"
+SCRIPT_PATH_ONLY="$(dirname "$(realpath "$0")")"
 user=$(whoami)
 timestamp=$(date +%d-%m-%Y:%H:%m:%S)
 HOSTNAME=$(hostname)
+LOG_FILES="$SCRIPT_PATH_ONLY/$LOG_FILE"
+info " Log Captured: ${LOG_FILES}"
+info " ========================"
+info " "
 
 #Basic Design of the script
 info ""
@@ -33,3 +38,12 @@ info " Hostname    : ${HOSTNAME}"
 
 #Main Function
 
+
+#Mail Function
+
+SUBJECT="$USERDEF_SUBJECT - $(date '+%F %T')"
+
+./send_email.sh "$TO_EMAIL" "$SUBJECT" "$LOG_FILE"
+
+
+#End of the Script file

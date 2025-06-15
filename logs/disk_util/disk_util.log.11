@@ -1,0 +1,10 @@
+2025-06-13 16:57:08[INFO] 
+2025-06-13 16:57:08[INFO]  Script Name : disk_util.sh 
+2025-06-13 16:57:08[INFO]  Path        : /home/knh5cob/Learning/scripts/disk_util.sh
+2025-06-13 16:57:08[INFO]  Logged in user:knh5cob
+2025-06-13 16:57:08[INFO]  Script execued on:13-06-2025:16:06:08
+2025-06-13 16:57:08[INFO]  Hostname    : deepa.example.com
+2025-06-13 16:57:08[INFO]  Log Captured: ./logs/disk_util/disk_util.log
+2025-06-13 16:57:08[INFO]  ========================
+2025-06-13 16:57:08[INFO]  
+2025-06-13 16:57:08[INFO] Disk usage is reached threshold: 45
